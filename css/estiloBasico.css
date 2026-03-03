@@ -1,0 +1,180 @@
+* {
+margin: 0px;
+padding: 0px;
+}
+h1 {
+font: bold 20px verdana, sans-serif;
+color:darkblue;
+} h2 {
+font: bold 14px verdana, sans-serif;
+}h4 {
+color: darkred;
+}
+
+/*para asegurarnos de que serán tratados como regularmente
+se hace con elementos <div> y de este modo construir
+el modelo de caja*/
+header, section, footer, aside, nav, article, figure, figcaption,
+hgroup{
+display: block;
+}
+/*Centrando el cuerpo*/
+body {
+text-align: center;
+/*background-image: url("paper.gif");*/
+/*background-color: lightblue;*/
+}
+/*Definiendo las propiedades de la caja principal*/
+#agrupar {
+width: 960px;
+margin: 15px auto;
+text-align: left;
+}
+/* Agregando estilos para <header>.*/
+#cabecera {
+background: #FFFBB9;
+border: 1px solid #999999;
+padding: 20px;
+
+}
+/*Agregando estilos para <nav>.*/
+#menu {
+background: #CCCCCC;
+padding: 5px 15px;
+}
+#menu li {
+display: inline-block;
+list-style: none; /*list-style: square inside url("sqpurple.gif");*/
+padding: 5px;
+font: bold 14px verdana, sans-serif;
+}
+/*Section y aside*/
+/*La propiedad flotante especifica cómo debe flotar un elemento.
+Nota: ¡Los elementos absolutamente posicionados ignoran
+la propiedad de flotación!
+Nota: los elementos después de un elemento flotante fluirán a su alrededor.
+Para evitar esto, use la propiedad clear o el clearfix hack
+*/
+#seccion {
+float: left;
+width: 660px;
+margin: 20px;
+}
+
+#columna {
+float: left;
+width: 220px;
+margin: 20px 0px;
+padding: 20px;
+background: #CCCCCC;
+}
+/*Footer*/
+#pie {
+clear: both;/* No permita elementos flotantes en el lado izquierdo
+                o derecho de un elemento <p> especificado:*/
+text-align: center;
+padding: 20px;
+border-top: 2px solid #999999;
+}
+/*imagenes*/
+#imagen{
+  width: 20%;
+  height: 20%;
+}
+
+#imagen2{
+  width: 15%;
+  height: 10%;
+}
+
+/*Agregando los últimos toques a nuestro diseño básico.*/
+article {
+background: #FFFBCC;
+border: 1px solid #999999;
+padding: 20px;
+margin-bottom: 15px;
+}
+
+article footer {
+text-align: right;
+}
+
+img{
+  width: 30%;
+  height: 35%;
+}
+
+time {
+color: #999999;
+}
+
+figcaption {
+font: italic 14px verdana, sans-serif;
+}
+  /* El contenedor principal se vuelve un "flexbox" */
+  .tarjeta-musical {
+    display: flex;
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 20px;           /* Espacio entre la imagen y el texto */
+    font-family: sans-serif;
+  }
+
+  /* Estilo para tu imagen */
+  #img1 {
+    width: 150px;        /* Ajusta el tamaño a tu gusto */
+    height: 150px;
+    background-image: url(../imagenes/img1.jpg); /* Pon aquí la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;  /* Opcional: bordes redondeados */
+    flex-shrink: 0;      /* Evita que la imagen se deforme */
+  }
+
+  /* Estilos rápidos para el texto */
+  .info-musical h3, .info-musical h4, .info-musical p {
+    margin: 5px 0;       /* Reduce el espacio entre líneas */
+  }
+
+    #img2 {
+    width: 150px;        /* Ajusta el tamaño a tu gusto */
+    height: 150px;
+    background-image: url(../imagenes/img2.jpg); /* Pon aquí la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;  /* Opcional: bordes redondeados */
+    flex-shrink: 0;      /* Evita que la imagen se deforme */
+  }
+
+   #img3 {
+    width: 150px;        /* Ajusta el tamaño a tu gusto */
+    height: 150px;
+    background-image: url(../imagenes/img3.jpg); /* Pon aquí la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;  /* Opcional: bordes redondeados */
+    flex-shrink: 0;      /* Evita que la imagen se deforme */
+  }
+
+   #img4{
+    width: 150px;        /* Ajusta el tamaño a tu gusto */
+    height: 150px;
+    background-image: url(../imagenes/img4.jpg); /* Pon aquí la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;  /* Opcional: bordes redondeados */
+    flex-shrink: 0;      /* Evita que la imagen se deforme */
+  }
+
+   #img5{
+    width: 150px;        /* Ajusta el tamaño a tu gusto */
+    height: 150px;
+    background-image: url(../imagenes/img5.jpg); /* Pon aquí la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;  /* Opcional: bordes redondeados */
+    flex-shrink: 0;      /* Evita que la imagen se deforme */
+  }
+  
+  body {
+    background-color:  #F8F9FA;
+}
