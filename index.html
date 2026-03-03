@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Ejemplo de HTML5">
+  <meta name="keywords" content="HTML5, CSS3, JavaScript">
+  <meta http‐equiv="refresh" content="20;URL=./2PantillaBasica.htm" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi blog</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" >
+  <link rel="stylesheet" type="text/css" href="css/estiloBasico.css">
+</head>
+<body>
+  <div id="agrupar">
+
+  <header id="cabecera">
+      <h1>Mi blog</h1>
+  </header>
+
+  <nav id="menu">
+    <ul>
+    <li><a href="index.html">Principal</a></li>
+    <li><a href="contenidoindividual.html">Contenido individual</a></li>
+    <li><a href="creadores.html">Creadores</a></li>
+    <li><a href="descargables.html">Descarga de archivos</a></li>
+    </ul>
+  </nav>
+
+  <section id="seccion">
+      <article><!--Primer articulo-->
+        <header>
+              <hgroup>
+                  <h1>Bienvenido al blog</h1>
+                  <h4>Equipo 1</h4>
+              </hgroup>
+              <time datetime="2026-03-01" pubdate>
+                    publicado 01-03-2026
+              </time>
+        </header>
+        <br>
+          Mediante este blog se les será posible visualizar un video del grupo, videos personales, música en mp3 e imagenes del equipo.
+          <figure>
+            <div>
+                    <video width="480" height="240" controls>
+                        <source src="imagenes/videogrupal.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <figcaption>
+                    Video introductorio de los integrantes del equipo
+          </figure>
+
+          <footer>
+              <p>comentarios (5)</p>
+          </footer>
+      </article><!-- Fin Primer articulo-->
+
+      <article><!-- Tercero articulo-->
+          <header>
+            <hgroup>
+                <h1>Programación Web</h1>
+                <h4>HTML y CSS</h4>
+            </hgroup>
+            <time datetime="2026-03-01" pubdate>
+                publicado 01-03-2026
+            </time>
+         </header>
+         <br>
+         <p style="text-align: justify;">HTML significa HyperText Markup Language (Lenguaje de Marcado de Hipertexto). Es el lenguaje estándar utilizado para estructurar y organizar el contenido de las páginas web mediante etiquetas o marcas. No es un lenguaje de programación, sino un lenguaje de marcado que define elementos como títulos, párrafos, imágenes y enlaces. 
+         CSS son las siglas en inglés de Cascading Style Sheets, traducido al español como Hojas de Estilo en Cascada. Es un lenguaje declarativo fundamental en el desarrollo web utilizado para definir el aspecto visual, diseño, formato y estilo de documentos estructurados en HTML o XML, separando el contenido de la presentación. 
+         </p>
+         <figure>
+               <img id="imagen2" src="imagenes/htmlycss.jpg">
+               <figcaption>
+                   Esta es la imagen del primer mensaje
+               </figcaption>
+         </figure>
+         <footer>
+            <p>comentarios (0)</p>
+          </footer>
+    </article> <!-- Fin Tercer articulo-->
+
+</section> <!--Fin de section seccion-->
+
+  <aside id="columna"> <!-- aside -->
+    
+      <blockquote>Nos encuentras en nuestras redes sociales como:</blockquote>
+      <a href="https://www.facebook.com/">
+       <figure>
+         <img src="imagenes/facebook.png" alt="facebook" >
+       </figure>
+     </a>
+     <blockquote>Equipo_1</blockquote>
+    <br>
+     <a href="https://www.instagram.com/">
+        <figure>
+          <img src="imagenes/Instagram.jpg" alt="instagram">
+        </figure>
+      </a>
+      <blockquote>Equipo1</blockquote>
+  </aside> <!-- Fin aside -->
+
+  <footer id="pie">
+      Derechos Reservados &copy; 2010-2026
+      <address>
+          <a href="http://www.itorizaba.edu.mx">ITO</a>
+      </address>
+  </footer>
+
+</div> <!--fin div agrupar-->
+
+</body>
+</html>

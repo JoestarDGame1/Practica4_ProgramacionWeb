@@ -1,0 +1,39 @@
+<style>
+  /* El contenedor principal se vuelve un "flexbox" */
+  .tarjeta-musical {
+    display: flex;
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 20px;           /* Espacio entre la imagen y el texto */
+    font-family: sans-serif;
+  }
+
+  /* Estilo para tu imagen */
+  #imagen1 {
+    width: 150px;        /* Ajusta el tamaño a tu gusto */
+    height: 150px;
+    background-image: url(imagenes/img1.jpg); /* Pon aquí la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;  /* Opcional: bordes redondeados */
+    flex-shrink: 0;      /* Evita que la imagen se deforme */
+  }
+
+  /* Estilos rápidos para el texto */
+  .info-musical h3, .info-musical h4, .info-musical p {
+    margin: 5px 0;       /* Reduce el espacio entre líneas */
+  }
+</style>
+
+<div class="tarjeta-musical">
+  <div id="imagen1"></div>
+
+  <div class="info-musical">
+    <time>2022-11-23</time>
+    <h3>Tema Musical</h3>
+    <h4>Train</h4>
+    <p>Brick+Mortar</p>
+    <audio src="audio/1.mp3" controls="controls" preload="preload">
+      Tu navegador no soporta audio haz click aqui
+    </audio>
+  </div>
+</div>
